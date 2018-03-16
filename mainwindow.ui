@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>391</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="infoLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>381</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>软件名称：学生兴趣管理系统
+作者：邓丰阳
+使用指南：本软件操作简单，界面美观。用户可在学生信息展示界面进行与学生信息有关的操作，在兴趣管理界面执行进行与兴趣有关的操作。所有操作在程序关闭时存储为文本文件。并在下一次开启软件时载入。或者您可以选择下方按钮不保存本次操作退出。</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitWithoutSaveButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>410</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>不保存操作退出(&amp;Q)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>883</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>添加(&amp;A)</string>
+    </property>
+    <addaction name="addNewStudentAction"/>
+    <addaction name="separator"/>
+    <addaction name="addInteAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>查找(&amp;S)</string>
+    </property>
+    <addaction name="showAllInfoActon"/>
+    <addaction name="separator"/>
+    <addaction name="showAllInfoBySearchNameAction"/>
+    <addaction name="showAllInfoBySearchIdAction"/>
+    <addaction name="showAllInfoBySearchDeAction"/>
+    <addaction name="separator"/>
+    <addaction name="showInteAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>帮助(&amp;O)</string>
+    </property>
+    <addaction name="useInfoAction"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_O"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="addNewStudentAction"/>
+   <addaction name="addInteAction"/>
+   <addaction name="separator"/>
+   <addaction name="showAllInfoActon"/>
+   <addaction name="showInteAction"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="addNewStudentAction">
+   <property name="text">
+    <string>添加新学生(&amp;A)</string>
+   </property>
+  </action>
+  <action name="showAllInfoActon">
+   <property name="text">
+    <string>查看所有学生信息(&amp;S)</string>
+   </property>
+  </action>
+  <action name="showAllInfoBySearchNameAction">
+   <property name="text">
+    <string>通过姓名查找学生(&amp;F)</string>
+   </property>
+  </action>
+  <action name="showAllInfoBySearchIdAction">
+   <property name="text">
+    <string>通过学号查找学生(&amp;G)</string>
+   </property>
+  </action>
+  <action name="showAllInfoBySearchDeAction">
+   <property name="text">
+    <string>通过专业查找学生(&amp;K)</string>
+   </property>
+  </action>
+  <action name="showInteAction">
+   <property name="text">
+    <string>查看所有兴趣信息(&amp;X)</string>
+   </property>
+  </action>
+  <action name="addInteAction">
+   <property name="text">
+    <string>添加新兴趣(&amp;O)</string>
+   </property>
+  </action>
+  <action name="useInfoAction">
+   <property name="text">
+    <string>使用说明(&amp;O)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

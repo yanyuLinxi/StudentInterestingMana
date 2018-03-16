@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>start.jpg</file>
+        <file>RQ.jpg</file>
+        <file>BGRQ.png</file>
+        <file>BGRQ1.png</file>
+        <file>ICON.png</file>
+        <file>IRONMAN.png</file>
+    </qresource>
+    <qresource prefix="/new">
+        <file>UIBeauty.qss</file>
+    </qresource>
+</RCC>
